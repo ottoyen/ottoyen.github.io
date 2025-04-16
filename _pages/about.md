@@ -1,8 +1,6 @@
 ---
 permalink: /about/
-title: "About"
+title: "關於我"
 ---
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
-
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+10 年以上的專案開發經驗，歷經紮實的養成訓練，由程式設計師 → 系統設計師 → 系統分析師 → 技術經理。主要帶領專案開發部門承接金融領域之交易系統、商業智慧分析、情資整合分析平台及大數據分析平台架構設計與建置，目前任職於國泰金控數數發中心擔任雲端技術架構師，負責執行集團雲端轉型計劃，擬定集團上雲策略，並協助各子公司完成混合雲網路設計、雲原生應用程式架構、管理治理與組織等面向達到上雲準備。
