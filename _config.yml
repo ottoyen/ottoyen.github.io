@@ -59,7 +59,7 @@ plugins:
 
 author:
   name   : "Otto Yen"
-  avatar : "/assets/images/bio-photo.jpg"
+  avatar : "/assets/images/otto-photo.jpeg"
   bio    : "人生和工作的結果 = 思維方式 × 熱情 × 能力"
   links:
     - label: "Website"
