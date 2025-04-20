@@ -18,7 +18,7 @@ tags:
 
 * 會議名稱：[國泰金融創新關鍵勢 Podcast](https://www.cathayinnovation-podcast.com.tw)
 * 演講時間：2024-12-04
-* 演講連結：[S6EP8【金融上雲】金融業迎向大規模上雲潮，在法規賦予彈性下，如何擴增雲端版圖？ #fintech #雲端 #金融創新 #金融上雲](https://www.youtube.com/watch?v=nQ9ycmVSoYM)
+* 相關連結：[S6EP8【金融上雲】金融業迎向大規模上雲潮，在法規賦予彈性下，如何擴增雲端版圖？ #fintech #雲端 #金融創新 #金融上雲](https://www.youtube.com/watch?v=nQ9ycmVSoYM)
   {% endcapture %}
 
 <div class="notice">{{ notice-2 | markdownify }}</div>

@@ -18,7 +18,7 @@ Smart Archie** 這個 AI 工具，用於自動生成和修改雲端架構圖。
 
 * 會議名稱：圓桌會議
 * 演講時間：2025-04-18
-* 演講連結：
+* 相關連結：
   {% endcapture %}
 
 <div class="notice">{{ notice-2 | markdownify }}</div>

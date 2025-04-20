@@ -18,7 +18,7 @@ tags:
 
 * 會議名稱：Domain Driven Design Taiwan 領域驅動設計年會
 * 演講時間：2020-11-27 15:00
-* 演講連結：[https://www.youtube.com/watch?v=zMRL20HYM5Q](https://www.youtube.com/watch?v=zMRL20HYM5Q)
+* 相關連結：[Youtube](https://www.youtube.com/watch?v=zMRL20HYM5Q)
   {% endcapture %}
 
 <div class="notice">{{ notice-2 | markdownify }}</div>

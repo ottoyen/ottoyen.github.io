@@ -18,7 +18,7 @@ tags:
 
 * 會議名稱：DevFest Taipei 2024
 * 演講時間：2024-11-30 13:00
-* 演講連結：
+* 相關連結：[PDF簡報]({{ site.baseurl }}/assets/Z世代的超能力 NotebookLM 的十倍速學習法_v4.pdf)
   {% endcapture %}
 
 <div class="notice">{{ notice-2 | markdownify }}</div>
