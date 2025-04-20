@@ -56,10 +56,14 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
-  - jekyll-google-analytics   # 新增 Google Analytics 外掛
 
-# Google Analytics 設定
-google_analytics: "G-VMVMKE3199"  # 替換成你的測量 ID
+# Analytics (Google Analytics Global Site Tag)
+analytics:
+  provider: "google-gtag"     # 選擇 gtag.js
+  google:
+    tracking_id: "G-VMVMKE3199" # 你的測量 ID
+    anonymize_ip: true         # 是否啟用 IP 匿名化（可選）
+
 
 author:
   name   : "Otto Yen"
