@@ -56,6 +56,10 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  - jekyll-google-analytics   # 新增 Google Analytics 外掛
+
+# Google Analytics 設定
+google_analytics: "G-VMVMKE3199"  # 替換成你的測量 ID
 
 author:
   name   : "Otto Yen"
