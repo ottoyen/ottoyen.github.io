@@ -1,5 +1,5 @@
 ---
-title: "生成式AI如何革新雲端企業架構設計"
+title: "生成式AI如何革新企業雲端架構設計"
 date: 2025-04-18T10:40:00-04:00
 categories:
   - Speech
