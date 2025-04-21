@@ -6,7 +6,7 @@ categories:
 tags:
   - 雲端轉型
   - 混合雲
-  - 資安合規
+  - 資安與合規
   - Cathay 6R
   - Serverless
   - 容器化
