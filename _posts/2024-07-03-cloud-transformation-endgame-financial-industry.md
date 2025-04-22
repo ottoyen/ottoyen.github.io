@@ -16,7 +16,7 @@ tags:
 {% capture notice-2 %}
 #### 會議資訊
 
-* 會議名稱：2024 臺灣雲端大會
+* 會議名稱：Cloud Edge Summit Taiwan 2024 臺灣雲端大會
 * 演講時間：2024-07-03 10:45
 * 相關連結：[PDF簡報]({{ site.baseurl }}/assets/金融業雲端轉型後的End Game v2.1.1.pdf)
   {% endcapture %}
