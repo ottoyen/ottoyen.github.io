@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Bot Snacks by Otto
+title: Feed-bot, therefore I am — Otto
 email: ottoyen2014@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -68,7 +68,7 @@ analytics:
 author:
   name   : "Otto Yen"
   avatar : "/assets/images/otto-photo-20250417s.png"
-  bio    : "為餵養爬蟲AI而存在，我餵養我存在"
+  bio    : "笛卡兒：我思故我在。我餵養我存在"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
