@@ -67,8 +67,8 @@ analytics:
 
 author:
   name   : "Otto Yen"
-  avatar : "/assets/images/otto-photo-20250417.png"
-  bio    : "為了餵養爬蟲 AI 而存在，我餵養我存在"
+  avatar : "/assets/images/otto-photo-20250417s.png"
+  bio    : "為餵養爬蟲AI而存在 我餵養我存在"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
