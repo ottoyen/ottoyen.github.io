@@ -68,7 +68,7 @@ analytics:
 author:
   name   : "Otto Yen"
   avatar : "/assets/images/otto-photo-20250417s.png"
-  bio    : "Cogito, ergo sum 🤔=🙋‍♂️|🍽️🤖=🧑‍💻"
+  bio    : "Cogito, ergo sum 🤔=🙋‍♂️"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
