@@ -2,7 +2,7 @@
 title: "與生成式AI共存-基於安全、可控、有效目標發展雲端AI知識顧問平台"
 date: 2023-09-20T00:00:00-00:00
 categories:
-  - Speech
+  - Talk
 tags:
   - 生成式AI 
   - 雲端轉型

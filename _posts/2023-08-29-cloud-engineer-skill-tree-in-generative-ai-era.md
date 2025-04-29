@@ -2,7 +2,7 @@
 title: "生成式AI大爆炸時代，雲端技術人才的技能樹"
 date: 2023-08-29T00:00:00-00:00
 categories:
-  - Speech
+  - Talk
 tags:
   - 雲端證照
   - 技能樹

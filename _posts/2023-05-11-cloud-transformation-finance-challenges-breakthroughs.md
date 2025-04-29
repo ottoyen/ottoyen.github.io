@@ -2,7 +2,7 @@
 title: "金融業雲端轉型三部曲之挑戰與突破"
 date: 2023-05-11T00:00:00-00:00
 categories:
-  - Speech
+  - Talk
 tags:
   - 雲端轉型
   - 混合雲

@@ -2,7 +2,7 @@
 title: "CDK x Terraform 跨雲演出 (Multi-Cloud Container Applications with CDK for Terraform)"
 date: 2020-08-12T00:00:00-00:00
 categories:
-  - Speech
+  - Talk
 tags:
   - CDK
   - Terraform

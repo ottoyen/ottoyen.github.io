@@ -2,7 +2,7 @@
 title: "生成式AI如何革新企業雲端架構設計"
 date: 2025-04-18T10:40:00-04:00
 categories:
-  - Speech
+  - Talk
 tags:
   - 雲端轉型
   - AI輔助架構設計

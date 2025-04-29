@@ -2,7 +2,7 @@
 title: "金融業導入領域驅動設計之應用實例"
 date: 2020-11-17T00:00:00-04:00
 categories:
-  - Speech
+  - Talk
 tags:
   - 領域驅動設計（DDD）
   - 微服務架構

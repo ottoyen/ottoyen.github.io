@@ -2,7 +2,7 @@
 title: "Smart Archie 雲端架構圖智能生成助手"
 date: 2024-10-15T00:00:00-00:00
 categories:
-  - Speech
+  - Talk
 tags:
   - 雲端架構
   - Diagram-as-Code

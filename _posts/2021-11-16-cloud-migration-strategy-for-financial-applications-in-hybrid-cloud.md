@@ -2,7 +2,7 @@
 title: "金融業於混合雲架構下應用系統之上雲策略"
 date: 2021-11-16T00:00:00-00:00
 categories:
-  - Speech
+  - Talk
 tags:
   - 雲端轉型
   - DevOps

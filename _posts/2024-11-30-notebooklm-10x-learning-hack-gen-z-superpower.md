@@ -2,7 +2,7 @@
 title: "Z世代的超能力：NotebookLM的十倍速學習法"
 date: 2024-11-30T00:00:00-00:00
 categories:
-  - Speech
+  - Talk
 tags:
   - NotebookLM 
   - 個人化資料流

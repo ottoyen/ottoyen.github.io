@@ -2,7 +2,7 @@
 title: "使用IaC自動化技術以符合金融業上雲之資安與合規要求"
 date: 2021-10-21T00:00:00-00:00
 categories:
-  - Speech
+  - Talk
 tags:
   - 金融上雲
   - 資安與合規

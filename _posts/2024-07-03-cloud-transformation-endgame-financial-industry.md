@@ -2,7 +2,7 @@
 title: "金融業雲端轉型後的End Game"
 date: 2024-07-03T00:00:00-00:00
 categories:
-  - Speech
+  - Talk
 tags:
   - 雲端轉型
   - Cathay 6R
