@@ -1,8 +1,8 @@
 ---
-title: ""
+title: "從FULL TIME影片探討工作對於人的根本意義"
 date: 2099-01-01T00:00:00-00:00
 categories:
-  - Speech
+  - Thoughts
 tags:
   - x
   - 
