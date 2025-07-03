@@ -1,4 +1,7 @@
-# Banking Application 雲原生重構指南
+---
+permalink: /cloud_native_refactoring_guide/
+title: "Banking Application 雲原生重構指南"
+---
 ## 適用於 Google Cloud Run 部署
 
 ### 📋 目錄

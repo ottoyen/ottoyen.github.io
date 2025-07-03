@@ -18,7 +18,7 @@ tags:
 
 * 會議名稱：Cloud Edge Summit Taiwan 2025 臺灣雲端大會
 * 演講時間：2025-07-02 12:00
-* 相關連結：[PDF簡報]({{ site.baseurl }}/assets/生成式AI與雲原生技術的融合 實現IT現代化v1.2_wmp4.pdf) [單體範例程式](https://github.com/ottoyen/banking-app) [雲原生架構重構建議](https://github.com/ottoyen/ottoyen.github.io/blob/main/assets/cloud_native_refactoring_guide.md)
+* 相關連結：[PDF簡報]({{ site.baseurl }}/assets/生成式AI與雲原生技術的融合 實現IT現代化v1.2_wmp4.pdf) [單體範例程式](https://github.com/ottoyen/banking-app) [雲原生架構重構建議]({{ site.baseurl }}/cloud_native_refactoring_guide/)
   {% endcapture %}
 
 <div class="notice">{{ notice-2 | markdownify }}</div>
