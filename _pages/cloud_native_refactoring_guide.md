@@ -992,5 +992,5 @@ gcloud run deploy banking-api \
 **📝 文件版本**: v1.0  
 **📅 最後更新**: 2025-07-01  
 **👤 架構師**: Claude Code 
-♨   **Prompt**: 我要將這個目錄重構為雲原生架構，以適合運行在Cloud Run上，請將建議輸出為md檔案
+**♨   Prompt**: 我要將這個目錄重構為雲原生架構，以適合運行在Cloud Run上，請將建議輸出為md檔案
 
