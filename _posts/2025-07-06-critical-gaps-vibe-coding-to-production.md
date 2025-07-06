@@ -24,14 +24,16 @@ tags:
 
 ## **解法總覽：從「秀技術」到「交付價值」**
 
-1. **雙軌開發模型（Dual-Track）**
+- **雙軌開發模型（Dual-Track）**
 
-- **Exploration 軌**：保留 Vibe Coding 的高速實驗優勢，限定在 *Sandbox or Feature Branch*，不連接正式環境。
-- **Delivery 軌**：以 **Platform Engineering** 提供「鋪好路 (Paved Road)」——標準化模板、CI/CD、測試框架、觀測性與安全閘門。
+  - **Exploration 軌**：保留 Vibe Coding 的高速實驗優勢，限定在 *Sandbox or Feature Branch*，不連接正式環境。
+
+  - **Delivery 軌**：以 **Platform Engineering** 提供「鋪好路 (Paved Road)」——標準化模板、CI/CD、測試框架、觀測性與安全閘門。
+
 
 > 兩條軌道以 *pull request* 或 *feature toggle* 交會，讓 demo 可逐步升級為 Production-Ready。
 
-2. **里程碑化成熟度模型（M0-M3）**
+- **里程碑化成熟度模型（M0-M3）**
 
 | **等級**          | **交付物**     | **必要門檻**                                             |
 | ----------------- | -------------- | -------------------------------------------------------- |
@@ -40,17 +42,23 @@ tags:
 | **M2 Pilot**      | 部分正式流量   | 加密機制、SLO & Alert、Blue-Green or Canary (金絲雀測試) |
 | **M3 Production** | 全量上線       | 災難復原 (DR) 演練、持續性滲透測試、FinOps 成本基線      |
 
-3. **雲端治理與法遵 Shift-Left**
+- **雲端治理與法遵 Shift-Left**
 
-- **Policy as Code**（如 OPA/Gatekeeper）在 Merge 時即檢查稽核條件。
-- **自動化 Threat Modeling & SBOM**，確保開源依賴可追溯。
-- **FinOps Guardrails**：開發階段預設低規格 + 自動停機，避免「Demo 用完忘了關」。
+  - **Policy as Code**（如 OPA/Gatekeeper）在 Merge 時即檢查稽核條件。
 
-4. **平台化 DevEx（Developer Experience）**
+  - **自動化 Threat Modeling & SBOM**，確保開源依賴可追溯。
 
-- **Service Catalog**：一鍵產生符合企業標準的微服務骨架。
-- **Golden Paths**：文件＋範例程式＋範本 GitHub Actions，降低學習曲線。
-- **內部社群 & Gemba Walk(現場走訪)**：持續收集痛點，迭代平台功能與 CLI 工具。
+  - **FinOps Guardrails**：開發階段預設低規格 + 自動停機，避免「Demo 用完忘了關」。
+
+
+- **平台化 DevEx（Developer Experience）**
+
+  - **Service Catalog**：一鍵產生符合企業標準的微服務骨架。
+
+  - **Golden Paths**：文件＋範例程式＋範本 GitHub Actions，降低學習曲線。
+
+  - **內部社群 & Gemba Walk(現場走訪)**：持續收集痛點，迭代平台功能與 CLI 工具。
+
 
 ------
 
