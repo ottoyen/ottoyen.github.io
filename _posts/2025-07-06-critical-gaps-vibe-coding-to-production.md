@@ -1,5 +1,5 @@
 ---
-title: "「一周出Demo，半年用不好」──Vibe Coding 走向穩定上線的坎(Gap)"
+title: "「一周出Demo，半年用不好」──Vibe Coding 走向穩定上線的 Gap"
 date: 2025-07-06T00:00:00-00:00
 categories:
   - Reflection
