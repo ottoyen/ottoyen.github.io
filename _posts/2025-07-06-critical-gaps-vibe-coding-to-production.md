@@ -40,16 +40,17 @@ tags:
 | **M2 Pilot**      | 部分正式流量   | 加密機制、SLO & Alert、Blue-Green or Canary          |
 | **M3 Production** | 全量上線       | 災難復原 (DR) 演練、持續性穿測、FinOps 成本基線      |
 
+3. **雲端治理與法遵 Shift-Left**
 
+- **Policy as Code**（如 OPA/Gatekeeper）在 Merge 時即檢查稽核條件。
+- **自動化 Threat Modeling & SBOM**，確保開源依賴可追溯。
+- **FinOps Guardrails**：開發階段預設低規格 + 自動停機，避免「Demo 用完忘了關」。
 
-1. **雲端治理與法遵 Shift-Left**
-   - **Policy as Code**（如 OPA/Gatekeeper）在 Merge 時即檢查稽核條件。
-   - **自動化 Threat Modeling & SBOM**，確保開源依賴可追溯。
-   - **FinOps Guardrails**：開發階段預設低規格 + 自動停機，避免「Demo 用完忘了關」。
-2. **平台化 DevEx（Developer Experience）**
-   - **Service Catalog**：一鍵產生符合企業標準的微服務骨架。
-   - **Golden Paths**：文件＋範例程式＋範本 GitHub Actions，降低學習曲線。
-   - **內部社群 & Gemba Walk(現場走訪)**：持續收集痛點，迭代平台功能與 CLI 工具。
+4. **平台化 DevEx（Developer Experience）**
+
+- **Service Catalog**：一鍵產生符合企業標準的微服務骨架。
+- **Golden Paths**：文件＋範例程式＋範本 GitHub Actions，降低學習曲線。
+- **內部社群 & Gemba Walk(現場走訪)**：持續收集痛點，迭代平台功能與 CLI 工具。
 
 ------
 
