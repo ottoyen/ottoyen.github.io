@@ -7,11 +7,11 @@ tags:
   - Vibe Coding
 ---
 
-> Vibe Coding快但常陷「能跑不能用」。解法：雙軌開發，Demo留Sandbox，正式版走平台化流程；用成熟度門檻，測試、IaC、SLO、DR逐級到位。引入Policy as Code與FinOps Guardrails提前檢核，Service Catalog與Golden Path優化DevEx。搭配成熟度評分、事故分享與成本透明，實現又快又穩，為企業帶來持續價值與競爭優勢。<div class="notice">{{ notice-2 | markdownify }}</div>
+> Vibe Coding快但常陷「能跑不能用」。解法：雙軌開發，Demo留Sandbox，正式版走平台化流程；用成熟度門檻，測試、IaC、SLO、DR逐級到位。引入Policy as Code與FinOps Guardrails提前檢核，Service Catalog與Golden Path優化DevEx。搭配成熟度評分、事故分享與成本透明，實現又快又穩，為企業帶來持續價值與競爭優勢。
 
-### 
 
-| **Gap**                        | **典型情境**                                                 | **風險**                          |
+
+| **比較**                       | **典型情境**                                                 | **風險**                          |
 | ------------------------------ | ------------------------------------------------------------ | --------------------------------- |
 | **能跑 VS 能用**               | Demo 時順跑通，但缺測試、監控、回滾機制                      | 上線後 Bug 難以定位，無法快速恢復 |
 | **概念車 VS 量產車**           | 漂漂亮亮的概念車不見的可以在高速公路上行駛。POC 採硬寫死參數、手動部署 | 日後規模化全靠人力補洞，成本暴增  |
