@@ -26,19 +26,19 @@ tags:
 
 1. **雙軌開發模型（Dual-Track）**
 
-   - **Exploration 軌**：保留 Vibe Coding 的高速實驗優勢，限定在 *Sandbox or Feature Branch*，不連接生產資料。
+   - **Exploration 軌**：保留 Vibe Coding 的高速實驗優勢，限定在 *Sandbox or Feature Branch*，不連接正式環境。
    - **Delivery 軌**：以 **Platform Engineering** 提供「鋪好路 (Paved Road)」——標準化模板、CI/CD、測試框架、觀測性與安全閘門。
 
    > 兩條軌道以 *pull request* 或 *feature toggle* 交會，讓 demo 可逐步升級為 Production-Ready。
 
 2. **里程碑化成熟度模型（M0-M3）**
 
-| **等級**          | **交付物**     | **必要門檻**                                         |
-| ----------------- | -------------- | ---------------------------------------------------- |
-| **M0 Prototype**  | 能展示核心流程 | 隔離環境、可重製指令 (e.g., Makefile / DevContainer) |
-| **M1 MVP**        | 小範圍真實用戶 | 單元 + 整合測試 ≥ 60% 覆蓋、IaC 自動部署             |
-| **M2 Pilot**      | 部分正式流量   | 加密機制、SLO & Alert、Blue-Green or Canary          |
-| **M3 Production** | 全量上線       | 災難復原 (DR) 演練、持續性穿測、FinOps 成本基線      |
+| **等級**          | **交付物**     | **必要門檻**                                             |
+| ----------------- | -------------- | -------------------------------------------------------- |
+| **M0 Prototype**  | 能展示核心流程 | 隔離環境、可重製指令 (e.g., Makefile / DevContainer)     |
+| **M1 MVP**        | 小範圍真實用戶 | 單元 + 整合測試 ≥ 60% 覆蓋、IaC 自動部署                 |
+| **M2 Pilot**      | 部分正式流量   | 加密機制、SLO & Alert、Blue-Green or Canary (金絲雀測試) |
+| **M3 Production** | 全量上線       | 災難復原 (DR) 演練、持續性滲透測試、FinOps 成本基線      |
 
 3. **雲端治理與法遵 Shift-Left**
 
@@ -58,14 +58,14 @@ tags:
 
 ## **從 Demo 到上線：實務時間表範例**
 
-| **週期**       | **目標**     | **關鍵活動**                                       |
-| -------------- | ------------ | -------------------------------------------------- |
-| **Week 1-2**   | M0 Prototype | Vibe Coding 快速驗證 → 產出 README＋錄影 Demo      |
-| **Week 3-6**   | M1 MVP       | 重構為標準骨架、撰寫測試、IaC 腳本、CI/CD Pipeline |
-| **Week 7-10**  | M2 Pilot     | 上跨區域低流量、加入觀測性儀表板、成本監控         |
-| **Week 11-12** | Go-Live (M3) | Chaos Drill、法遵審核、變更審批、全流量切換        |
+| **週期**       | **目標**     | **關鍵活動**                                           |
+| -------------- | ------------ | ------------------------------------------------------ |
+| **Week 1-2**   | M0 Prototype | Vibe Coding 快速驗證 → 產出 README＋錄影 Demo          |
+| **Week 3-6**   | M1 MVP       | 重構為標準骨架、撰寫測試、IaC 腳本、CI/CD Pipeline     |
+| **Week 7-10**  | M2 Pilot     | 上跨區域低流量、加入觀測性儀表板、成本監控             |
+| **Week 11-12** | Go-Live (M3) | Chaos Drill (混沌演練)、法遵審核、變更審批、全流量切換 |
 
-> **要訣：讓「快」只在 學習回饋循環，而不是在 跳過必要工程。**
+> **要訣：讓「快」只在 學習回饋循環，而不是在 跳過必要軟體工程。**
 
 ------
 
@@ -73,10 +73,10 @@ tags:
 
 ## **行動清單（Checklist）**
 
-1. 建立 **Vibe Sandbox 專案範本**，預設不可連接生產 VPC。
+1. 建立 **Vibe Sandbox 專案範本**，預設不可連接正式環境 VPC。
 2. 將 **CI/CD Gate** 與 **Policy as Code** 整合；Fail Fast。
 3. 推行 **Maturity Scorecard**，每週評估專案位階與缺口。
-4. 成立 **Platform Guild**，定期分享真實 incident case，提升工程自覺。
+4. 成立 **Platform Guild (平台工程社群)**，定期分享真實 incident case，提升工程自覺。
 5. 對管理層透明化 **Cycle Time、MTTR、單位功能成本**，證明「鋪路」投資回報。
 
 ------
