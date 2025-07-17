@@ -5,6 +5,9 @@ categories:
   - Reflection
 tags:
   - Vibe Coding
+  - 雙軌開發模型
+
+
 ---
 
 > Vibe Coding快但常陷「能跑不能用」。解法：雙軌開發，Demo留Sandbox，正式版走平台化流程；用成熟度門檻，測試、IaC、SLO、DR逐級到位。引入Policy as Code與FinOps Guardrails提前檢核，Service Catalog與Golden Path優化DevEx。搭配成熟度評分、事故分享與成本透明，實現又快又穩，為企業帶來持續價值與競爭優勢。
@@ -25,10 +28,9 @@ tags:
 ## **解法總覽：從「秀技術」到「交付價值」**
 
 - **雙軌開發模型（Dual-Track）**
-
-  - **Exploration 軌**：保留 Vibe Coding 的高速實驗優勢，限定在 *Sandbox or Feature Branch*，不連接正式環境。
-
-  - **Delivery 軌**：以 **Platform Engineering** 提供「鋪好路 (Paved Road)」——標準化模板、CI/CD、測試框架、觀測性與安全閘門。
+- **Exploration 軌**：保留 Vibe Coding 的高速實驗優勢，限定在 *Sandbox or Feature Branch*，不連接正式環境。
+  
+- **Delivery 軌**：以 **Platform Engineering** 提供「鋪好路 (Paved Road)」——標準化模板、CI/CD、測試框架、觀測性與安全閘門。
 
 
 > 兩條軌道以 *pull request* 或 *feature toggle* 交會，讓 demo 可逐步升級為 Production-Ready。
