@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>管理者對比｜可拖拉心智圖</title>
+  <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f7f7f5;
+      --ink:#222;
+      --left:#7ec9d7;
+      --right:#f6b87b;
+      --center:#c8b6ff;
+      --chip:#ffffff;
+      --line:#4a5568;           /* 深一點的線色 */
+      --shadow: 0 6px 20px rgba(0,0,0,.12);
+      --radius: 16px;
+    }
+    html,body{height:100%;margin:0;background:var(--bg);font-family:"LXGW WenKai TC", system-ui, -apple-system, "Noto Sans TC", sans-serif;}
+    .toolbar{position:fixed; inset:auto 16px 16px auto; z-index:3; display:flex; gap:8px; flex-wrap:wrap;}
+    .toolbar button{border:0; padding:8px 12px; border-radius:999px; background:#111; color:#fff; cursor:pointer; box-shadow: var(--shadow); font-size:14px;}
+    .stage{
+      position:relative; width:100vw; height:100vh; overflow:hidden;
+      background:
+        radial-gradient(circle at 0 0, #fff0 18px, #ddd2 19px, #fff0 20px) 0 0/56px 56px,
+        var(--bg);
+    }
+    /* 關鍵修正：給 SVG 實體寬高，確保可見 */
+    svg.wires{
+      position:absolute; inset:0; z-index:1; pointer-events:none;
+      width:100%; height:100%;
+    }
+    .node{
+      position:absolute; padding:14px 18px; background:var(--chip); color:var(--ink);
+      border-radius: var(--radius); box-shadow: var(--shadow);
+      border:2px solid #00000012; user-select:none; cursor:grab; z-index:2;
+      transition: box-shadow .15s ease, transform .05s;
+      display:flex; align-items:center; gap:.35rem;
+      font-size:18px; line-height:1.25;
+    }
+    .node:active{cursor:grabbing; transform:scale(1.02);}
+    .node.center{background:var(--center);}
+    .node.left{background:var(--left); color:#0b3b45;}
+    .node.right{background:var(--right); color:#5d3706;}
+    .pill{background:#fff; padding:.35rem .6rem; border-radius:999px; border:1.5px solid #00000012; box-shadow: var(--shadow); font-size:16px;}
+    .hint{position:fixed; left:16px; bottom:16px; color:#555; font-size:13px; opacity:.85; background:#fff; padding:8px 10px; border-radius:12px; box-shadow: var(--shadow); z-index:3;}
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <button id="resetBtn">重置位置</button>
+    <button id="toggleGridBtn">切換背景格線</button>
+  </div>
+
+  <div class="stage" id="stage">
+    <!-- 連線層：加入 width/height 與 preserveAspectRatio -->
+    <svg class="wires" id="wires" width="100%" height="100%" preserveAspectRatio="none"></svg>
+
+    <!-- 節點：中心 -->
+    <div class="node center" id="A" style="left:calc(50% - 70px); top:calc(50% - 30px);">
+      🧭 <strong>管理者對比</strong>
+    </div>
+
+    <!-- 左側：初/中階 -->
+    <div class="node left" id="B" style="left:18%; top:50%;">👥 <strong>初級、中級管理者</strong></div>
+    <div class="node pill" id="B1" style="left:6%; top:58%;">📈 技能提升</div>
+    <div class="node pill" id="B2" style="left:11%; top:72%;">🤝 團隊管理</div>
+    <div class="node pill" id="B3" style="left:26%; top:70%;">💡 個人貢獻</div>
+    <div class="node pill" id="B4" style="left:33%; top:36%;">⏱️ 關注效率</div>
+    <div class="node pill" id="B5" style="left:9%; top:38%;">📝 執行任務</div>
+
+    <!-- 右側：高階 -->
+    <div class="node right" id="C" style="left:66%; top:50%;">🏛️ <strong>高級管理者</strong></div>
+    <div class="node pill" id="C1" style="left:58%; top:24%;">💰 資源分配</div>
+    <div class="node pill" id="C2" style="left:58%; top:70%;">♟️ 制定戰略</div>
+    <div class="node pill" id="C3" style="left:76%; top:71%;">🛡️ 風險控制</div>
+    <div class="node pill" id="C4" style="left:77%; top:23%;">🌱 培養人才</div>
+    <div class="node pill" id="C5" style="left:86%; top:55%;">❤️ 關注價值</div>
+    <div class="node pill" id="C6" style="left:90%; top:36%;">🔗 跨部門協調</div>
+  </div>
+
+  <div class="hint">提示：拖拉任一節點移動；右下角按鈕可切換格線或重置位置。</div>
+
+  <script>
+    const edges = [
+      ["A","B"],["A","C"],
+      ["B","B1"],["B","B2"],["B","B3"],["B","B4"],["B","B5"],
+      ["C","C1"],["C","C2"],["C","C3"],["C","C4"],["C","C5"],["C","C6"]
+    ];
+
+    const stage = document.getElementById('stage');
+    const wires = document.getElementById('wires');
+
+    // 建立 SVG 線段（加上更明顯的描邊和透明度）
+    const lineEls = edges.map(([from,to])=>{
+      const l = document.createElementNS("http://www.w3.org/2000/svg","path");
+      l.setAttribute('fill','none');
+      l.setAttribute('stroke','var(--line)');
+      l.setAttribute('stroke-opacity','0.9');
+      l.setAttribute('stroke-width','3.5');
+      l.setAttribute('data-from', from);
+      l.setAttribute('data-to', to);
+      l.setAttribute('stroke-linecap','round');
+      wires.appendChild(l);
+      return l;
+    });
+
+    function centerOf(el){
+      const r = el.getBoundingClientRect();
+      const s = stage.getBoundingClientRect();
+      return { x: r.left - s.left + r.width/2, y: r.top - s.top + r.height/2 };
+    }
+
+    function bezier(p1, p2){
+      const dx = (p2.x - p1.x) * 0.35;
+      const c1 = {x: p1.x + dx, y: p1.y};
+      const c2 = {x: p2.x - dx, y: p2.y};
+      return `M ${p1.x},${p1.y} C ${c1.x},${c1.y} ${c2.x},${c2.y} ${p2.x},${p2.y}`;
+    }
+
+    function redraw(){
+      lineEls.forEach(path=>{
+        const from = document.getElementById(path.dataset.from);
+        const to   = document.getElementById(path.dataset.to);
+        if(!from || !to) return;
+        const p1 = centerOf(from);
+        const p2 = centerOf(to);
+        path.setAttribute('d', bezier(p1,p2));
+      });
+    }
+
+    // 拖拉
+    let active = null, start = {x:0,y:0}, origin = {x:0,y:0};
+    stage.querySelectorAll('.node').forEach(el=>{
+      el.addEventListener('pointerdown', e=>{
+        active = el;
+        start = {x: e.clientX, y: e.clientY};
+        const st = getComputedStyle(el);
+        origin = { x: parseFloat(st.left), y: parseFloat(st.top) };
+        el.setPointerCapture(e.pointerId);
+      });
+      el.addEventListener('pointermove', e=>{
+        if(!active || active!==el) return;
+        const dx = e.clientX - start.x;
+        const dy = e.clientY - start.y;
+        el.style.left = (origin.x + dx) + 'px';
+        el.style.top  = (origin.y + dy) + 'px';
+        redraw();
+      });
+      el.addEventListener('pointerup', ()=> active=null);
+      el.addEventListener('pointercancel', ()=> active=null);
+    });
+
+    // 初始繪線
+    window.addEventListener('load', redraw);
+    window.addEventListener('resize', redraw);
+
+    // 重置與格線
+    document.getElementById('resetBtn').addEventListener('click', ()=>{
+      const presets = {
+        A:["calc(50% - 70px)","calc(50% - 30px)"],
+        B:["18%","50%"], B1:["6%","58%"], B2:["11%","72%"], B3:["26%","70%"], B4:["33%","36%"], B5:["9%","38%"],
+        C:["66%","50%"], C1:["58%","24%"], C2:["58%","70%"], C3:["76%","71%"], C4:["77%","23%"], C5:["86%","55%"], C6:["90%","36%"]
+      };
+      Object.entries(presets).forEach(([id,[l,t]])=>{
+        const el = document.getElementById(id);
+        el.style.left = l; el.style.top = t;
+      });
+      redraw();
+    });
+
+    const toggle = document.getElementById('toggleGridBtn');
+    const stageEl = document.getElementById('stage');
+    let gridOn = true;
+    toggle.addEventListener('click', ()=>{
+      gridOn = !gridOn;
+      stageEl.style.background = gridOn
+        ? 'radial-gradient(circle at 0 0, #fff0 18px, #ddd2 19px, #fff0 20px) 0 0/56px 56px, var(--bg)'
+        : 'var(--bg)';
+    });
+  </script>
+</body>
+</html>
