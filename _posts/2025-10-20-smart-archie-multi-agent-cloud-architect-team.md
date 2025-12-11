@@ -21,7 +21,7 @@ tags:
 
 * 會議名稱：[2025 國泰金控技術年會](https://www.cathaytechcon.com.tw/2025CTC)
 * 演講時間：2025-10-20 14:10
-* 相關連結：[YouTube](https://www.youtube.com/watch?v=ZCZLW75RDdI)
+* 相關連結：[YouTube](https://www.youtube.com/watch?v=ZCZLW75RDdI) [相關報導](https://www.ithome.com.tw/news/172490)
   {% endcapture %}
 
 <div class="notice">{{ notice-2 | markdownify }}</div>
