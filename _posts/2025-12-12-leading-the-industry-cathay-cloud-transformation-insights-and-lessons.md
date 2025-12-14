@@ -11,14 +11,14 @@ tags:
   - FinOps
 ---
 
-> 這場演講分享集團七年雲端轉型三部曲：從建立合規地基的 Cloud Ready，到實現百套系統上雲的 Cloud Adoption，邁向 2025 年結合 AI 的 Cloud First 策略,。國泰採多雲混合架構以獲取敏捷與高可用性，並展示自研 AI 工具 Smart Archie，利用 Multi-Agent 自動生成合規架構與程式碼,。轉型核心在於文化建立與標準化治理，藉由雲端算力與 GenAI 加速金融創新,。
+> 這場演講分享集團七年雲端轉型三部曲：從建立合規地基的 Cloud Ready，到實現百套系統上雲的 Cloud Adoption，邁向 2025 年結合 AI 的 Cloud First 策略,。國泰採多雲混合架構以獲取敏捷與高可用性，並展示自研 AI 工具 Smart Archie，利用 Multi-Agent 自動生成合規架構與程式碼,。轉型核心在於文化建立與標準化治理，藉由雲端算力與 GenAI 加速金融創新。
 
 {% capture notice-2 %}
 #### 會議資訊
 
 * 會議名稱：WebConf 2025
 * 演講時間：2025-12-12 11:00
-* 相關連結：[PDF簡報]({{ site.baseurl }}/assets/走在同業前面_國泰的雲端轉型洞察與啟示_v3.pdf)  [AI Podcast]({{ site.baseurl }}/assets/走在同業前面_國泰的雲端轉型洞察與啟示_v3.m4a)
+* 相關連結：[PDF簡報]({{ site.baseurl }}/assets/走在同業前面_國泰的雲端轉型洞察與啟示_v3.pdf)  [AI Podcast]({{ site.baseurl }}/assets/走在同業前面_國泰的雲端轉型洞察與啟示.m4a)
   {% endcapture %}
 
 <div class="notice">{{ notice-2 | markdownify }}</div>
