@@ -5,3 +5,10 @@
 layout: home
 author_profile: true
 ---
+
+{% assign featured_post = site.posts.first %}
+{% if featured_post.header.teaser %}
+<a href="{{ featured_post.url | relative_url }}" aria-label="{{ featured_post.title }}">
+  <img src="{{ featured_post.header.teaser | relative_url }}" alt="{{ featured_post.title }}" class="align-center">
+</a>
+{% endif %}
