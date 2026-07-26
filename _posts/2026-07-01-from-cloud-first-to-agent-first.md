@@ -24,7 +24,7 @@ header:
 * 會議名稱：[2026 iThome 臺灣雲端大會](https://cloudsummit.ithome.com.tw/2026/)
 * 演講時間：2026-07-01 15:30–16:00
 * 演講地點：台北南港展覽館 2 館 7 樓 701D
-* 相關連結：[官方議程](https://cloudsummit.ithome.com.tw/2026/agenda) [PDF簡報]({{ site.baseurl }}/assets/從 Cloud First 到 Agent First v1.pdf)
+* 相關連結：[🗓️官方議程](https://cloudsummit.ithome.com.tw/2026/agenda)   [📕PDF簡報]({{ site.baseurl }}/assets/從 Cloud First 到 Agent First v1.pdf)   [🎵Podcast](https://audio.ottoyen.dev/ottoyen/2026-07-01-from-cloud-first-to-agent-first.m4a)
   {% endcapture %}
 
 <div class="notice">{{ notice-2 | markdownify }}</div>
